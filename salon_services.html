@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+     margin: 0px;
+     padding: 0px;
+
+ } 
+ .left {
+        font-size: 20px;
+        display: inline-block;
+        position: absolute;
+        left: 8px;
+        top: -3px;
+    }
+    .left img {
+        width: 78px;
+        height: 78px;
+        padding-left: 10px;
+    }
+
+ .mid {
+        font-size: 23px;
+        display: block;
+        margin: -7px auto;
+        padding: 25px;
+        padding-left: 92px;
+        justify-content: center;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 13px;
+        display: inline-block;
+    }
+    header{
+        background-color: #bf9e82bf;
+        height: 77px;
+        width: 100vw;
+    }
+
+    .navbar {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        margin: 4px auto;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+        font-size: 22px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar li a {
+        color: rgb(61 9 9);
+        text-decoration: none;
+        padding: 15px;
+        
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: white;
+        text-decoration: underline;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgba(90, 52, 43, 0.76);
+        color: black;
+        border-color: rgb(18, 1, 1);
+        color: white;
+        cursor: pointer;
+    }
+    div.container button.btn{
+        margin-left: 30%;
+        margin-top: 30px;
+        padding: 10px 40px;
+        border-radius: 45px;
+    }
+    button.btn{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 0px 11px;
+    }  
+    div.left{
+        margin:auto;
+    } 
+
+    footer{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+footer div#footercontact{
+    height: 47vh;
+    background-color: rgb(22 21 21);
+    color: white;
+    padding: 24px 48px;
+}
+div#footercontact p{
+    margin-bottom: 13px;
+}
+div#footercontact p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+div#footerimg img{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    filter: invert(100%);
+}
+footer div.center{
+    width: 100vw;
+    height: 3vh;
+    background: black;
+    color: white;
+    padding: 9px 0px;
+    justify-content: center;
+    text-align: center;
+    }
+</style>
+<body>
+    <header id="header">
+        <div class="left">
+            <img src="logosalon1.png" alt="">
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="salon_home.html" >Home</a></li>
+                <li><a href="salon_about.html">About Us</a></li>
+                <li><a href="salon_services.html" class="active">Our Services</a></li>
+                <li><a href="salon_contact.html">Contact Us</a></li>
+             
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <a href="salon_services.html#footercontact"><button class="btn">Call Us Now</button></a>
+            <a href="salon_services.html#footercontact"><button class="btn">Email Us</button></a>
+        </div>
+    </header> 
+    <footer id="footer">
+        <div id="footercontact">
+            <p><a href="salon_about.html">About Us</a></p>
+            <p><a href="salon_contact.html">Contact Us</a></p>
+            <p>MONDAY CLOSED<br>
+                TUES-WED : 12:00pm - 7:00pm<br>
+                THURS-SAT : 10:00am - 6:00pm<br>
+                SUNDAY AT ONLY<br>
+                10:00am - 2:00pm</p>
+            <p>CONTACT NO.<div class="images" id="footerimg"><img src="contact.png"></div> +918403782981 +917983647798</p>
+            <p>EMAIL ID: SparkleSalon2022@gmail.com</p>
+            <p>ADDRESS:  #269, Plot No 31, Shastri bridge to Jabalpur hospital road Besides spandan hospital, Bhavartal Garden Rd, Napier Town, Jabalpur, Madhya Pradesh 482001</p>
+        </div>
+        <div class="center">
+            Copyright &copy; www.MySparkleSalon.com | All rights reserved!!
+        </div>
+    </footer> 
+</body>
+</html>

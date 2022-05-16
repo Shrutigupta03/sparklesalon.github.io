@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2:wght@600&family=Lavishly+Yours&family=Lobster&family=Ms+Madi&family=Rokkitt:wght@200&family=Tapestry&family=Trochut&family=Updock&family=Whisper&display=swap" rel="stylesheet">
+    <title>Sparkle Salon Home</title>
+</head>
+
+<style>
+*{
+     margin: 0px;
+     padding: 0px;
+
+ } 
+ .left {
+        font-size: 20px;
+        display: inline-block;
+        position: absolute;
+        left: 8px;
+        top: -3px;
+    }
+    .left img {
+        width: 78px;
+        height: 78px;
+        padding-left: 10px;
+    }
+
+ .mid {
+        font-size: 23px;
+        display: block;
+        margin: -7px auto;
+        padding: 25px;
+        padding-left: 92px;
+        justify-content: center;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 13px;
+        display: inline-block;
+    }
+    header{
+        background-color: #bf9e82bf;
+        height: 77px;
+        width: 100vw;
+    }
+
+    .navbar {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        margin: 4px auto;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+        font-size: 22px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar li a {
+        color: rgb(61 9 9);
+        text-decoration: none;
+        padding: 15px;
+        
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: white;
+        text-decoration: underline;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgba(90, 52, 43, 0.76);
+        color: black;
+        border-color: rgb(18, 1, 1);
+        color: white;
+        cursor: pointer;
+    }
+    div.container button.btn{
+        margin-left: 30%;
+        margin-top: 30px;
+        padding: 10px 40px;
+        border-radius: 45px;
+    }
+    button.btn{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 0px 11px;
+    }  
+    div.left{
+        margin:auto;
+    } 
+     div#heading{
+        padding: 56px 46px 0px 53px;
+        height: 101px;
+        color:  rgb(61 9 9);
+        width: 49vw;
+        display: inline;
+        margin-right: -499px;
+    }
+    section#uppersection #heading .text{
+        display: inline;
+        font-size: 9vw;
+        z-index: 1;
+        padding: 12px;
+        font-family: 'Whisper', cursive;
+        text-shadow: 4px 5px 8px rgb(57, 56, 56);
+    }
+
+    section#uppersection{
+        height: 707px;
+        /* background-color:  rgb(255 235 232 / 53%); */
+        display: inline-flex;
+        width: 100vw;
+    }
+
+    div.slogan{
+        font-size: 2vw;
+        margin-left: -13px;
+        margin-top: 30px;
+        font-family: 'Tapestry', cursive;
+        color: #8b1212;
+        font-weight: bold;
+    }
+    div#heading hr{
+        width: 26vw;
+        color: black;
+        margin-top: 65px;
+        border: 1px solid black;
+        margin-left: -5px;
+    }
+    div#frstcontact{
+        justify-content: left;
+        margin-top: 46px;
+        text-align: left;
+        margin-left: 1vw;
+        font-size: 20px;
+    }
+    section#uppersection::before{
+    content: "";
+    position: absolute;
+    background: url('salonbg5.jpg') no-repeat center center/cover;
+    height: 850px;
+    width: 100vw;
+    z-index: -1;
+    }
+
+section#secondsection{
+    width: 100vw;
+    height: 67vh;    
+}
+div#subsection{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+div.circle img{
+    height: 38vh;
+    width: 15vw;
+    margin: 5px;
+   margin-top: 80px;
+    border: 4px solid #ece4da;
+    border-radius: 12px;
+    padding: 0px;
+    /* background-color: rgb(255, 255, 255); */
+
+}
+div.circle img:hover{
+     border: 4px solid rgba(115, 84, 50, 0.689);
+     box-shadow: 0px 0px 25px rgb(65, 59, 59);
+     margin: 10px;
+     margin-top: 70px;
+     height: 41vh;
+     width: 17vw;
+}
+
+div#salonmain img{
+    height: 55vh;
+    margin-top: 24px;
+    width: 17vw;
+}
+div#salonmain img:hover{
+    margin: 10px;
+    margin-top: 12px;
+    height: 57vh;
+    width: 19vw;
+}
+div.circle.sidepic img{
+    height: 25vh;
+    margin-top: 120px;
+    width: 12vw;
+}
+div.circle.sidepic img:hover{
+    height: 28vh;
+    width: 14vw;
+}
+div.images{
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+}
+div.images a{
+    color: black;
+}
+div#moreimage{
+    justify-content: center;
+    display: block;
+    margin-top: 5px;
+}
+div#moreimage:hover{
+    font-size: 18px;
+}
+div#contactimg img{
+    width: 25px;
+    height: 25px;
+    margin-top: 32px;
+    text-align: center;
+    margin-left: 13px;
+    margin-bottom: -6px;
+}
+section#secondsection::before{
+    content: "";
+    position: absolute;
+    background-color: #bf9e82bf;
+    height: 67vh;
+    width: 100vw;
+    opacity: 0.9;
+    z-index: -2;
+}
+
+section#thirdsection{
+    width: 100vw;
+    height: 67vh;
+    display: inline;
+}
+section#thirdsection::before{
+    content: "";
+    position: absolute;
+    background-color: #d9cbcbab;
+    height: 58vh;
+    width: 100vw;
+    z-index: -1;
+}
+section#thirdsection div.thrd{
+    display: flex;
+    height: 44vh;
+}
+div.thrdhead{
+    font-family: 'Updock', cursive;
+    font-size: 3rem;
+    margin-left: 10vw;
+    padding-top: 17px;
+    text-shadow: 4px 4px 5px rgb(169, 162, 162);
+    color: rgb(32 3 8);
+}
+div.circleimg {
+    width: 34vw;
+    margin-top: 3vh;
+}
+div.circleimg img {
+    height: 33vh;
+    margin: 5px;
+    margin-left: 3px;
+    margin-top: -14px;
+}
+p.thrdpara{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 47vw;
+    margin-left: 192px;
+    font-size: 17px;
+}
+p.thirdhead{
+    font-size: 72px;
+    font-family: 'Lavishly Yours', cursive;
+}
+div#thrdpara{
+    justify-content: center;
+    margin-top: -5vh;
+}
+div#contactlash{
+    font-size: 32px;
+    margin-top: 6vh;
+    margin-left: 27vw;
+}
+div#contactlash:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+div#contactlash a{
+    text-decoration: none;
+    color: black;
+}
+section#forthsection{
+    height: 59vh;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    width: 100vw;
+}
+div#fourth{
+    color: white;
+    margin-top: 8vh;
+    width: 60vw;
+}
+div#forthimg{
+    margin-left: 13vw;
+    width: 40vw;
+}
+div#forthimg img{
+    width: 40vw;
+    margin-top: 15vh;
+    margin-left: -150px;
+    max-height: 35vh;
+}
+div#fourth div#contactlash a{
+    color: white;
+}
+div#fourth p.thrdpara{
+    margin-left: 50px;
+}
+div#fourth div#contactlash{
+    margin-left: 15vw;
+}
+section#fifthsection{
+    height: 55vh;
+    background-color: #d9cbcbab;
+    display: flex;
+    width: 100vw;
+}
+div.fifthimg img{
+    height: 55vh;
+    width: 29vw;
+}
+div#fifth{
+    margin-top: 10vh;
+    margin-left: -1vw;
+}
+section#sixthsection{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    background-color:  #bf9e82bf;
+}
+div#sixth{
+    width: 60vw;
+    margin-top: 6vh;
+    margin-left: -17vh;
+}
+div#sixthimg{
+    width: 40vw;
+    justify-content: right;
+}
+div#sixthimg img{
+    height: 48vh;
+    margin-top: 2vh;
+    margin-left: 17vw;
+}
+section#seventhsection{
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    background-color:  #d9cbcbab;
+}
+div.seventhimg img{
+    width: 50vw;
+    margin-top: 7vh;
+    height: 49vh;
+}
+div#seventh{
+    width: 59vw;
+    margin-left: -15vw;
+    margin-top: 7vh;
+}
+section#eighthsection{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+div#artistdescription{
+    display: flex;
+    justify-content: center;
+    height: 71vh;
+}
+section#eighthsection::before{
+    content: "";
+    position: absolute;
+    background: url('flowerbg1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    }
+
+div.boxes{
+    width: 17vw;
+    height: 59vh;
+    border: 3px solid #3e0a0a;
+    border-radius: 0% 7% 0% 7%;
+    margin: 10px;
+    margin-top: 30px;
+    background-color: #3e0a0a;
+    box-shadow: 10px 11px 6px rgb(51, 49, 49);
+}
+div.boxes:hover{
+    box-shadow: 10px 11px 10px rgb(51, 49, 49);
+    width: 18vw;
+    height: 61vh;
+}
+div.boxes img{
+    width: 10vw;
+    height: 22vh;
+    margin: 1vh 3.5vw 0px 3.5vw;
+    border: 5px solid #ffffff;
+    border-radius: 4%;
+}
+p.artistname{
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: 'Ms Madi', cursive;
+}
+p.artist{
+    font-family: 'Lobster', cursive;
+}
+div p.work{
+    font-family: 'Rokkitt', serif;
+    margin: 3vh 2vw 1vh 2vw;
+    font-size: 1rem;
+}
+div.lastslogan{
+    font-family: 'Whisper', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4vh;
+}
+footer{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+footer div#footercontact{
+    height: 47vh;
+    background-color: rgb(22 21 21);
+    color: white;
+    padding: 24px 48px;
+}
+div#footercontact p{
+    margin-bottom: 13px;
+}
+div#footercontact p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+div#footerimg img{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    filter: invert(100%);
+}
+footer div.center{
+    width: 100vw;
+    height: 3vh;
+    background: black;
+    color: white;
+    padding: 9px 0px;
+    justify-content: center;
+    text-align: center;
+    }
+
+</style>
+<body>
+    <header id="header">
+        <div class="left">
+            <img src="logosalon1.png" alt="">
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="salon_home.html" class="active" >Home</a></li>
+                <li><a href="salon_about.html">About Us</a></li>
+                <li><a href="salon_services.html">Our Services</a></li>
+                <li><a href="salon_contact.html">Contact Us</a></li>
+             
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <a href="salon_home.html#footercontact"><button class="btn">Call Us Now</button></a>
+            <a href="salon_home.html#footercontact"><button class="btn">Email Us</button></a>
+        </div>
+    </header>
+    <div id="content">
+    <section id="uppersection">
+        <div id="heading">
+            <div class="text">Sparkle Salon</div>
+            <div class="slogan">Because being beautiful should never harm you :)</div>
+            <div class="slogan">-The salon that gives you Beauty!!</div>
+            <hr>
+            <div class="images" id="frstcontact"><a href="salon_contact.html">Contact Us</a></div>
+            <div class="images" id="contactimg"><img src="contact.png"></div>
+        </div>
+        <!-- <img id="makeupbg" src="makeupbg.png"> -->
+    </section>
+
+    <section id="secondsection">
+        <div id="subsection">
+            <div class="circle sidepic">
+                <img src="manicure.jpg">
+            </div>
+            <div class="circle" id="facial">
+                <img src="facemakeup1.jpg">
+            </div>
+            <div class="circle" id="salonmain">
+                <img src="salon main.jpg">
+            </div>
+            <div class="circle" id="waxing">
+                <img src="hair1.jpg">
+            </div>
+           <div class="circle sidepic">
+                <img src="spa1.jpg">
+            </div>
+        </div>
+        <div class="images" id="moreimage"><a href="sparklesalonimages">View More Images</a></div>
+    </section>
+
+    <section id="thirdsection">
+         <div class="thrdhead">
+             Ideas for better you!!
+         </div>
+         <div class="thrd">
+         <div class="circleimg"><img src="lash.png" alt="can't load image"></div>
+         <div id="thrdpara">
+         <p class="thrdpara thirdhead">Lash & Brow</p>
+         <p class="thrdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque numquam, officia sunt architecto laborum ea, accusamus eaque maxime aliquam minus quidem ipsam?</p>
+         <div id="contactlash"><a href="salon_contact.html">Book An Appointment</a></div>
+        </div>
+        </div>
+    </section>
+
+    <section id="forthsection">
+        <div id="fourth">
+            <p class="thrdpara thirdhead">Permanent Makeup</p>
+            <p class="thrdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque numquam, officia sunt architecto laborum ea, accusamus eaque maxime quidem ipsam?</p>
+            <div id="contactlash"><a href="salon_contact.html">Book An Appointment</a></div>   
+        </div>
+        <div id="forthimg"><img src="eyemake.png" alt="can't load image"></div>
+    </section>
+
+    <section id="fifthsection">
+        <div class="fifthimg"><img src="manipedi2.png" alt="can't load image"></div>
+        <div id="fifth">
+            <p class="thrdpara thirdhead">Mani $ Pedi</p>
+            <p class="thrdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque numquam, officia sunt architecto laborum ea, accusamus eaque maxime aliquam minus quidem ipsam?</p>
+            <div id="contactlash"><a href="salon_contact.html">Book An Appointment</a></div>
+    </section>
+
+    <section id="sixthsection">
+        <div id="sixth">
+            <p class="thrdpara thirdhead">Hair Services</p>
+            <p class="thrdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque numquam, officia sunt architecto laborum ea, accusamus eaque maxime quidem ipsam?</p>
+            <div id="contactlash"><a href="salon_contact.html">Book An Appointment</a></div>   
+        </div>
+        <div id="sixthimg"><img src="hairservice.png" alt="can't load image"></div>
+    </section>
+
+    <section id="seventhsection">
+        <div class="seventhimg"><img src="womanspa.png" alt="can't load image"></div>
+        <div id="seventh">
+            <p class="thrdpara thirdhead">Body Contouring</p>
+            <p class="thrdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque numquam, officia sunt architecto laborum ea, accusamus eaque maxime aliquam minus quidem ipsam?</p>
+            <div id="contactlash"><a href="salon_contact.html">Book An Appointment</a></div>
+    </section>
+
+    <section id="eighthsection">
+        <div id="artistdescription">
+        <div class="boxes">
+            <img src="artist1.jpeg" alt="">
+            <p class="artistname">Miss. Shreya Deshmukh</p>
+            <p class="artist artistname">Makeup Artist</p>
+            <p class="artistname work">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate harum numquam quasi velit nam voluptas doloremque accusant lisini firom fitton.</p>
+        </div>
+        <div class="boxes">
+            <img src="artist02.jpg" alt="">
+            <p class="artistname">Miss. Aashi Bhatra</p>
+            <p class="artist artistname">Hair Stylist</p>
+            <p class="artistname work">Lorem ipsum, dolor sit amet consectetur adicing elit. Voluptate harum numquam quasi velit nam voluptas dolo accusant sddnjn nssifi jisson prayersire.</p>
+        </div>
+        <div class="boxes">
+            <img src="artist3.jpg" alt="">
+            <p class="artistname">Miss. Parul garg</p>
+            <p class="artist artistname">Makeup Artist</p>
+            <p class="artistname work">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate harum numquam quasi velit nam voluptas doloremque accusant kimi liron fitto lines.</p>
+        </div>
+        </div>
+        <div class="lastslogan">
+        <p>We Know What You Like!!</p>
+        <p>Your One And Only Beauty Salon</p></div>
+    </section>
+    </div>
+
+    <footer id="footer">
+        <div id="footercontact">
+            <p><a href="salon_about.html">About Us</a></p>
+            <p><a href="salon_contact.html">Contact Us</a></p>
+            <p>MONDAY CLOSED<br>
+                TUES-WED : 12:00pm - 7:00pm<br>
+                THURS-SAT : 10:00am - 6:00pm<br>
+                SUNDAY AT ONLY<br>
+                10:00am - 2:00pm</p>
+            <p>CONTACT NO.<div class="images" id="footerimg"><img src="contact.png"></div> +918403782981 +917983647798</p>
+            <p>EMAIL ID: SparkleSalon2022@gmail.com</p>
+            <p>ADDRESS:  #269, Plot No 31, Shastri bridge to Jabalpur hospital road Besides spandan hospital, Bhavartal Garden Rd, Napier Town, Jabalpur, Madhya Pradesh 482001</p>
+        </div>
+        <div class="center">
+            Copyright &copy; www.MySparkleSalon.com | All rights reserved!!
+        </div>
+    </footer>
+</body>
+</html>

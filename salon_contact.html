@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle salon contact</title>
+</head>
+
+<style>
+
+ *{
+     margin: 0px;
+     padding: 0px;
+
+ }   
+
+ .left {
+        font-size: 20px;
+        display: inline-block;
+        position: absolute;
+        left: 8px;
+        top: -3px;
+        /* border: 2px solid red; */
+    }
+    .left img {
+        width: 78px;
+        height: 78px;
+        padding-left: 10px;
+       /* filter: invert(100%); */
+    }
+
+section#imgbody{
+    background-image: url('salon.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    /* position: absolute; */
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}    
+
+div.formitem {
+    padding: 9px ;
+    margin: 8px ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1#heading{
+    padding: 40px 20px 2px 2px;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 8px auto auto;
+    font-size: 56px;
+    display: block;
+    text-decoration: underline;
+    
+}
+
+div#h3{
+    margin: 15px 0px auto auto;
+    padding: 4px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    height: 35px;
+}
+
+
+form#form{
+    justify-content: center;
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+    padding: 0px 2px;
+    color: rgb(18, 1, 1);
+}
+
+div.container{
+        border: 4px solid rgb(18, 1, 1);
+        margin: 20px auto;
+        padding: 40px;
+        width: 30%;
+        border-radius: 28px;
+        justify-content: center;
+        text-align: center;
+ 
+}
+
+button.btn{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 0px 11px;
+}
+
+div.formitem input{
+        border: 2px solid black;
+        font-size: 15px;
+        padding: 8px;
+        border-radius: 8px;
+}
+.mid {
+        font-size: 23px;
+        display: block;
+        margin: -7px auto;
+        padding: 25px;
+        padding-left: 92px;
+        justify-content: center;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 13px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    header{
+        background-color: #bf9e82bf;
+        height: 77px;
+        width: 100vw;
+    }
+
+    .navbar {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        margin: 4px auto;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+        font-size: 22px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar li a {
+        color:  rgb(61 9 9);
+        text-decoration: none;
+        padding: 15px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: white;
+        text-decoration: underline;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color:  rgba(90, 52, 43, 0.76);
+        color: black;
+        border-color: rgb(18, 1, 1);
+        color: white;
+        cursor: pointer;
+    }
+
+    #inputsubmit:hover {
+        background-color:  rgba(90, 52, 43, 0.76);
+        color: black;
+        border-color: rgb(18, 1, 1);
+        color: white;
+        cursor: pointer;
+    }
+    div.container button.btn{
+        margin-left: 30%;
+        margin-top: 30px;
+        padding: 10px 40px;
+        border-radius: 45px;
+    }
+    
+    footer{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+footer div#footercontact{
+    height: 47vh;
+    background-color: rgb(22 21 21);
+    color: white;
+    padding: 24px 48px;
+}
+div#footercontact p{
+    margin-bottom: 13px;
+}
+div#footercontact p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+div#footerimg img{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    filter: invert(100%);
+}
+footer div.center{
+    width: 100vw;
+    height: 3vh;
+    background: black;
+    color: white;
+    padding: 9px 0px;
+    justify-content: center;
+    text-align: center;
+    }
+#inputsubmit{
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-top: 30px;
+    padding: 10px 40px;
+    border-radius: 45px;
+    border: 2px solid rgb(51, 6, 6);
+}
+</style>
+<body>
+
+<header id="header">
+    <div class="left">
+        <img src="logosalon1.png" alt="">
+
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="salon_home.html" >Home</a></li>
+            <li><a href="salon_about.html">About Us</a></li>
+            <li><a href="salon_services.html">Our Services</a></li>
+            <li><a href="salon_contact.html" class="active">Contact Us</a></li>
+         
+        </ul>
+    </div>
+    <!-- right box for buttons -->
+    <div class="right">
+        <a href="salon_contact.html#footercontact"><button class="btn">Call Us Now</button></a>
+        <a href="salon_contact.html#footercontact"><button class="btn">Email Us</button></a>
+    </div>
+</header>
+    <div id="content">
+    <section id="imgbody">
+    <h1 id="heading">Sparkle Salon</h1>
+    <div id="h3">!!!Get Upto 50% Off On Registering Today!!!</div>
+    <div class="container">
+    <form action="/" method="post" id="form">
+    <div class="formitem">
+        Name: <input placeholder="Enter Your Name" type="text" name="name">
+    </div>
+
+    <div class="formitem">
+        Date of appointment: <input type="date" name="date">
+    </div>
+
+    <div class="formitem">
+         Email: <input placeholder="Enter Your Email" type="email" name="email">
+    </div>
+
+    <div class="formitem">
+        Mobile No.: <input placeholder="Contact No." type="text" name="contact">
+    </div>
+
+    <input id="inputsubmit" type="submit" name="submit" value="Submit">
+    </form>
+    </div>
+    </section>
+    </div>
+
+    <footer id="footer">
+        <div id="footercontact">
+            <p><a href="salon_about.html">About Us</a></p>
+            <p><a href="salon_contact.html">Contact Us</a></p>
+            <p>MONDAY CLOSED<br>
+                TUES-WED : 12:00pm - 7:00pm<br>
+                THURS-SAT : 10:00am - 6:00pm<br>
+                SUNDAY AT ONLY<br>
+                10:00am - 2:00pm</p>
+            <p>CONTACT NO.<div class="images" id="footerimg"><img src="contact.png"></div> +918403782981 +917983647798</p>
+            <p>EMAIL ID: SparkleSalon2022@gmail.com</p>
+            <p>ADDRESS:  #269, Plot No 31, Shastri bridge to Jabalpur hospital road Besides spandan hospital, Bhavartal Garden Rd, Napier Town, Jabalpur, Madhya Pradesh 482001</p>
+        </div>
+        <div class="center">
+            Copyright &copy; www.MySparkleSalon.com | All rights reserved!!
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+    <script>
+        function zoomtext(){ 
+    var textdiv = document.getElementById("h3");
+    var fontSize = textdiv.style.fontSize;
+   
+    if (fontSize !== '25px') {
+      textdiv.style.fontSize = '25px';
+      textdiv.style.color= 'white';
+    }
+    else {
+      textdiv.style.fontSize = '20px';
+      textdiv.style.color= 'black'
+    }
+ 
+   setTimeout(zoomtext, 1000);
+    }
+ 
+    zoomtext();
+    </script>
+</body>
+</html>
